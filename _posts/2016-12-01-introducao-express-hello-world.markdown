@@ -6,7 +6,7 @@ date:   2016-12-01
 
 
 
-<p class="intro"><span class="dropcap">S</span>alve galera! Primeiro post vou ensinar como fazer um simples Hello World usando Node.js e Express, pra quem não sabe o Express é um framework para o Node.js que fornece um conjunto de recursos para aplicações web e móveis.</p>
+<p class="intro"><span class="dropcap">S</span>alve galera! Primeiro post vou ensinar como fazer um simples Hello World usando Node.js e Express, pra quem não sabe o Express é um framework para o Node.js que fornece um conjunto de recursos para aplicações web e móveis. </p>
 
 <p>Supondo que você já tenha o Node.js instalado na sua máquina vamos fazer a instalação do Express via NPM digitando o comando no terminal.</p>
 
