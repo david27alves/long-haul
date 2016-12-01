@@ -4,14 +4,36 @@ title:  "Test Post"
 date:   2014-12-10
 ---
 
-<p class="intro"><span class="dropcap">L</span>orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.</p>
 
-Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.
 
-Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.
+<p class="intro"><span class="dropcap">S</span>alve galera! Primeiro post vou ensinar como fazer um simples Hello World usando Node.js e Express, pra quem não sabe o Express é um framework para o Node.js que fornece um conjunto de recursos para aplicações web e móveis.</p>
+Supondo que você já tenha o Node.js instalado na sua máquina vamos fazer a instalação do Express via NPM digitando o comando no terminal.
 
-Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.
+{% highlight ruby %}
+$ npm install express -g
+{% endhighlight %}
 
-Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.
+Usando o parâmetro -g estamos instalando o Express em modo global, assim da próxima vez que for usar, basta apenas fazer o require na aplicação sem a necessidade de instalar novamente.
+Próximo passo é criar um diretório onde ficarão todos os arquivos da aplicação, navegue até o diretório,crie um arquivo chamado app.js e nele inclua o seguinte código:
 
-Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.
+{% highlight ruby %}
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+{% endhighlight %}
+
+O código inicia um servidor na porta 3000 e fica aguardando por conexões. Ele irá responder com a mensagem Hello World! à solicitação da rota raiz, no caso / e para qualquer rota que não seja a / ele irá responder com erro 404.
+Para executar a aplicação digite o comado no terminal.
+
+{% highlight ruby %}
+$ node app.js
+{% endhighlight %}
+
+Em seguida navegue até a página http://localhost:3000/ em um navegador para ver a aplicação em funcionamento.
