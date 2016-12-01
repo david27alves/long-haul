@@ -15,7 +15,7 @@ $ npm install express -g
 {% endhighlight %}
 
 <p>Usando o parâmetro -g estamos instalando o Express em modo global, assim da próxima vez que for usar, basta apenas fazer o require na aplicação sem a necessidade de instalar novamente.
-Próximo passo é criar um diretório onde ficarão todos os arquivos da aplicação, navegue até o diretório,crie um arquivo chamado app.js e nele inclua o seguinte código:</p>
+Próximo passo é criar um diretório onde ficarão todos os arquivos da aplicação, navegue até o diretório, crie um arquivo chamado app.js e nele inclua o seguinte código:</p>
 
 {% highlight ruby %}
 var express = require('express');
