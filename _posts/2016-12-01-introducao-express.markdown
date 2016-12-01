@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introdução Express - Hello World"
+title:  "Introdução Express"
 date:   2016-12-01
 ---
 
