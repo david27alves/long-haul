@@ -13,7 +13,7 @@ date:   2017-05-29
 
 <p>Não é atoa que o slogan do JQuery é "Write less, do more.", ele surgiu para simplificar a maneira como escrevemos JavaScrip, veja o exeplo de um código escrito em JavaScript puro e o código escrito em JQuery.</p>
 
-<p>Pegar o conteúdo de uma div com o id="content" e armazear em uma variável usando JavaScript puro.</p>
+<p>Vejamos como exemplo pegar o conteúdo de uma div com o id="content" e armazear em uma variável usando JavaScript puro.</p>
 
 {% highlight ruby %}
 var content = document.getElementById("#content").innerHTML;
