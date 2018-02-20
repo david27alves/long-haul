@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Example Post Formatting"
+title:  "Reparando bando de dados Syspdv"
 date:   2018-02-20
 ---
 
@@ -34,7 +34,8 @@ FICARÁ ASSIM: C:\>
 VC DIGITA: CD SYSPDV
 FICARÁ ASSIM: C:\SYSPDV>
 VOCÊ IRA AGORA INICIAR O PROCESSO DE REPARAÇÃO
- 
+
+{% highlight ruby %}
 C:\SYSPDV>set isc_user=sysdba
 C:\SYSPDV>set isc_password=masterkey
  
@@ -49,9 +50,15 @@ C:\SYSPDV>gbak -c -v -i -n srv.gbk syspdv_srv.fdb    <========> Desconsidera os 
  
  
 C:\Syspdv>gfix -user sysdba -password masterkey -mo read_write C:\Syspdv\Syspdv_srv.fdb  //marcar o banco com permissão de "escrita"
- 
+
+{% endhighlight %}
+
 ==========================================================================
 CASO NÃO DÊ CERTO, USE ESSES COMANDOS
 ==========================================================================
+
+{% highlight ruby %}
 C:\SYSPDV>gbak -b -v -g -i -l -o 1syspdv_srv.fdb srv.fbk
 C:\SYSPDV>gbak -c -v -i -o srv.fbk syspdv_srv.fdb
+
+{% endhighlight %}
