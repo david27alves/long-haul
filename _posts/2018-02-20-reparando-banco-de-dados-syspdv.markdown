@@ -5,7 +5,7 @@ date:   2018-02-20
 ---
 
 Bom dia leitores, últimamente estou tentando escrever para o blog, já que criei ele e sempre tive preguiça de escrever. :p <br>
-Atualmente trabalho em uma assistência que dá suporte no Syspdv, um sistema de automação comercial desenvolvido pela Casa Magalhães, e como forma de documentação dos problemas que encontro no dia, resolvi escrever aqui no blog, pois serve pra mim fazer consultas futuras e pra outras pessoas que enfrentem o mesmo problema.
+Atualmente trabalho em uma assistência que dá suporte no Syspdv, um sistema de automação comercial desenvolvido pela [Casa Magalhães](https://www.casamagalhaes.com.br/), e como forma de documentação dos problemas que encontro no dia, resolvi escrever aqui no blog, pois serve pra mim fazer consultas futuras e pra outras pessoas que enfrentem o mesmo problema.
 
 Atenção: antes de realizar todo esse processo faça um backup do banco de dados!
  
