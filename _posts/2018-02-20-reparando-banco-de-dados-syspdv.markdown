@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reparando bando de dados Syspdv"
+title:  "Reparando banco de dados Syspdv"
 date:   2018-02-20
 ---
 
@@ -17,7 +17,7 @@ C:\Program Files\Firebird\Firebird_2_5\bin
  
 Ex.: C:\Program Files (x86)\Firebird\Firebird_2_5\bin OU C:\Program Files\Firebird\Firebird_2_5\bin
 
-Nesta pasta você irá copiar os arquivos gfix.exe, gbak.exe, fbclient.dll e colar na pasta do Syspdv "C:\Syspdv"
+Nesta pasta você irá copiar os arquivos `gfix.exe`, `gbak.exe`, `fbclient.dll` e colar na pasta do Syspdv `C:\Syspdv`
  
 O segundo passo é renomear o banco de dados de syspdv_srv.fdb para 1syspdv_srv.fdb 
 
