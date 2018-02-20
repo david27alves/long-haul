@@ -24,8 +24,8 @@ O prompt de comando irá iniciar no diretório "C:\Users\Usuario".
 O comando cd serve para voltar um nível na árvore de diretórios, digite cd .. e o prompt irá para o diretório "C: Users", digite cd novamente e valtará para a raiz, agora navegue até a pasta do Syspdv digitando o comando cd Syspdv. Agora iremos iniciar o processo de reparação do banco.
 
 {% highlight ruby %}
-C:\SYSPDV>set isc_user=sysdba
-C:\SYSPDV>set isc_password=masterkey
+C:\Syspdv>set isc_user=sysdba
+C:\Syspdv>set isc_password=masterkey
  
 C:\Syspdv>gfix -user sysdba -password masterkey -mo read_only C:\Syspdv\1syspdv_srv.fdb  //marca o banco como somente leitura
  
