@@ -4,23 +4,19 @@ title:  "Reparando bando de dados Syspdv"
 date:   2018-02-20
 ---
 
-ANTES DE TUDO FAÇA UM BACKUP DO BANCO!!!!!!!!!!!!!!!!!!!!!
+Atenção: antes de realizar todo esse processo faça um backup do banco de dados!
  
  
-primeiro passo> ENTRAR NA PASTA C:\ARQUIVOS DE PROGRAMAS\FIREBIRD\FIREBIRD(VERSAO)\BIN
+O primeiro passo é entrar no diretório bin do Firebird
+{% highlight ruby %}
+C:\Program Files\Firebird\Firebird_2_5\bin
+{% endhighlight %}
  
-EX.: C:\Program Files (x86)\Firebird\Firebird_2_5\bin OU C:\Program Files\Firebird\Firebird_2_5\bin
+Ex.: C:\Program Files (x86)\Firebird\Firebird_2_5\bin OU C:\Program Files\Firebird\Firebird_2_5\bin
+
+Nesta pasta você irá copiar os arquivos gfix.exe, gbak.exe, fbclient.dll e colar na pasta do Syspdv "c:\Syspdv"
  
- 
-NESSA PASTA VOCÊ IRA COPIAR OS ARQUIVOS
-1º GFIX
-2º GBAK
-3º FBCLIENT.DLL
- 
-E COLAR NA PASTA DO SYSPDV - C:\SYSPDV
- 
-segundo passo> RENOMEAR BANCO DE SYSPDV_SRV.FDB PARA 1SYSPDV_SRV.FDB
- 
+O segundo passo é renomear o banco de dados de syspdv_srv.fdb para 1syspdv_srv.fdb 
  
 ABRA O PROMPT DE COMANDO
 NO INICIAR>EXECULTAR> DIGITE CMD E EXECULTE
