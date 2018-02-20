@@ -53,7 +53,9 @@ C:\Syspdv>gfix -user sysdba -password masterkey -mo read_write C:\Syspdv\Syspdv_
 Caso não dê certo, use os seguintes comandos
 
 {% highlight ruby %}
-C:\SYSPDV>gbak -b -v -g -i -l -o 1syspdv_srv.fdb srv.fbk
-C:\SYSPDV>gbak -c -v -i -o srv.fbk syspdv_srv.fdb
+C:\Syspdv>gbak -b -v -g -i -l -o 1syspdv_srv.fdb srv.fbk
+C:\Syspdv>gbak -c -v -i -o srv.fbk syspdv_srv.fdb
 
 {% endhighlight %}
+
+Fonte: Suporte Casa Magalhães
