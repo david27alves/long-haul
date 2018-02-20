@@ -12,7 +12,7 @@ Atualmente trabalho em uma assistência que dá suporte no Syspdv, um sistema de
 O Syspdv utiliza o Firebird como [SGBD](https://pt.wikipedia.org/wiki/Sistema_de_gerenciamento_de_banco_de_dados) na grande maioria dos clientes, alguns utilizam o SQL Server por conta da base de dados já estar muito grande e o Firebird possuir problemas de desempenho nesses casos.
 
 Poderíamos utilizar vários programas para proceder com a recuperação do banco de dados, mas o próprio Firebird possui uma excelente ferramenta para isso.
-Esta ferramenta é o GFIX que se encontra instalado no diretório BIN do banco de dados, e funciona em linha de comando no prompt de comando.
+Esta ferramenta é o GFIX que se encontra instalado no diretório BIN do banco de dados, e funciona em linha de comando no prompt do Windows.
 
 O primeiro passo é entrar no diretório bin do Firebird
 {% highlight ruby %}
