@@ -4,6 +4,9 @@ title:  "Reparando bando de dados Syspdv"
 date:   2018-02-20
 ---
 
+Bom dia leitores, últimamente estou tentando escrever para o blog, já que criei ele e sempre tive preguiça de escrever. :p
+Atualmente trabalho em uma assistência que dá suporte no Syspdv, um sistema de automação comercial desenvolvido pela Casa Magalhães, e como forma de documentação dos problemas que encontro no dia, resolvi escrever aqui no blog, pois serve pra mim fazer consultas futuras e pra outras pessoas que enfrentem o mesmo problema.
+
 Atenção: antes de realizar todo esse processo faça um backup do banco de dados!
  
  
@@ -18,10 +21,10 @@ Nesta pasta você irá copiar os arquivos gfix.exe, gbak.exe, fbclient.dll e col
  
 O segundo passo é renomear o banco de dados de syspdv_srv.fdb para 1syspdv_srv.fdb 
 
-Abra o prompt de comando, clique no menu iniciar, digite cmd e execute. Quando abrir a tela do prompt navegue ate a pasta do Syspdv.
+Abra o prompt de comando, clique no menu iniciar, digite cmd e execute. Quando abrir a tela do prompt navegue até a pasta do Syspdv.
 
 O prompt de comando irá iniciar no diretório "C:\Users\Usuario".
-O comando cd serve para voltar um nível na árvore de diretórios, digite cd .. e o prompt irá para o diretório "C: Users", digite cd novamente e valtará para a raiz, agora navegue até a pasta do Syspdv digitando o comando cd Syspdv. Agora iremos iniciar o processo de reparação do banco.
+O comando cd serve para voltar um nível na árvore de diretórios, digite cd .. e o prompt irá para o diretório "C:\Users", digite cd novamente e valtará para a raiz, agora navegue até a pasta do Syspdv digitando o comando cd Syspdv. Agora iremos iniciar o processo de reparação do banco.
 
 {% highlight ruby %}
 C:\Syspdv>set isc_user=sysdba
