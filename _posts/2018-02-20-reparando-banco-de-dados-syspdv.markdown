@@ -24,7 +24,9 @@ O segundo passo é renomear o banco de dados de syspdv_srv.fdb para 1syspdv_srv.
 Abra o prompt de comando, clique no menu iniciar, digite cmd e execute. Quando abrir a tela do prompt navegue até a pasta do Syspdv.
 
 O prompt de comando irá iniciar no diretório "C:\Users\Usuario".
-O comando cd serve para voltar um nível na árvore de diretórios, digite cd .. e o prompt irá para o diretório "C:\Users", digite cd novamente e valtará para a raiz, agora navegue até a pasta do Syspdv digitando o comando cd Syspdv. Agora iremos iniciar o processo de reparação do banco.
+O comando cd serve para voltar um nível na árvore de diretórios, digite cd .. e o prompt irá para o diretório "C:\Users", digite cd .. novamente e valtará para a raiz, agora navegue até a pasta do Syspdv digitando o comando cd Syspdv. Agora iremos iniciar o processo de reparação do banco.
+
+Digite os seguintes comando no prompt.
 
 {% highlight ruby %}
 C:\Syspdv>set isc_user=sysdba
