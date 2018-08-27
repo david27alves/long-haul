@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Instalando Integrador Fiscal do Ceará no Linux"
