@@ -59,6 +59,6 @@ C:\Syspdv>gbak -c -v -i -o srv.fbk syspdv_srv.fdb
 
 {% endhighlight %}
 
-Fonte: Suporte Casa Magalhãess
+Fonte: Suporte Casa Magalhães
 
 {% if page.comments %} {% endif %}
