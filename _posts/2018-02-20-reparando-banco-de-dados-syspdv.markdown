@@ -2,6 +2,7 @@
 layout: post
 title:  "Reparando banco de dados Firebird (Syspdv)"
 date:   2018-02-20
+comments: true
 ---
 
 Bom dia leitores, últimamente estou tentando escrever para o blog, já que criei ele e sempre tive preguiça de escrever. :p <br>
@@ -59,3 +60,5 @@ C:\Syspdv>gbak -c -v -i -o srv.fbk syspdv_srv.fdb
 {% endhighlight %}
 
 Fonte: Suporte Casa Magalhães
+
+{% if page.comments %} {% endif %}
