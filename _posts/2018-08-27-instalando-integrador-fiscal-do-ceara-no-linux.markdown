@@ -26,6 +26,22 @@ sudo apt-get update
 sudo apt-get install mono-complete uuid-runtime axel
 {% endhighlight %}
 
-> Mono é um implementação construída em comunidade do Framework .NET para uma ampla faixa de sistemas operacionais e arquiteturas de CPU. Na verdade, o framework .NET da Microsoft é apenas a mais comum implementação de um padrão ECMA, números de 334 e 335, que permite programas serem desenvolvidos em alguma plataforma e executados em outra plataforma.
+Mono é um implementação do Framework .NET para uma ampla faixa de sistemas operacionais, dentre eles o Linux, ele será responsável por executar o nosso integrador.
+Os comandos acima irão adicionar o repositório no Mono e fazer a instalação, é comum que durante a instalação demore um pouco. O pacote axel é semelhante ao wget, usaremos ele para baixar os nossos arquivos.
+
+## Download dos arquivos
+{% highlight ruby %}
+cd ~/Downloads
+axel https://integrador.blob.core.windows.net/integrador/instalador-ce-sefaz-driver-linux-x64-02.04.07.tar.gz
+ou 
+axel http://www.sefaz.ce.gov.br/content/aplicacao/internet/download/projetomfe/instalador-ce-sefaz-driver-linux-x64-02.04.09.tar.gz
+
+
+
+axel https://integrador.blob.core.windows.net/linuxwithoutui/sqlite-netFx-full-source-1.0.105.2.zip
+axel https://integrador.blob.core.windows.net/linuxwithoutui/IntegradorLinuxServidor.zip
+{% endhighlight %}
+
+Agora vamos baixar e extrair arquivos de instalação.
 
 {% if page.comments %} {% endif %}
