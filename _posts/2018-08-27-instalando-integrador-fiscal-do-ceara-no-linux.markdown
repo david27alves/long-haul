@@ -10,13 +10,16 @@ Atualmente ele pode ser instalado tanto no Windows quanto no Linux, a versão qu
 Os comandos devem ser executados na ordem como está descrito aqui, caso contrário corre o risco de não funcionar.
 
 ## Comando ldd
+Primeiro passo é executar o comando abaixo, ele serve para listar a versão do ldd, caso seja menor que 2.12 ele não irá funcionar.
 {% highlight ruby %}
-$ ldd --version
+ldd --version
 {% endhighlight %}
 
-Primeiro passo é executar o comando acima, ele serve para listar a versão do ldd, caso seja menor que 2.12 ele não irá funcionar.
+
 
 ## Instalação do Mono
+Mono é um implementação do Framework .NET para uma ampla faixa de sistemas operacionais, dentre eles o Linux, ele será responsável por executar o nosso integrador.
+Os comandos acima irão adicionar o repositório no Mono e fazer a instalação, é comum que durante a instalação demore um pouco. O pacote axel é semelhante ao wget, usaremos ele para baixar os nossos arquivos.
 {% highlight ruby %}
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/ubuntu xenial main" | sudo tee /etc/apt/sources.list.d/mono-official.list
@@ -26,10 +29,10 @@ sudo apt-get update
 sudo apt-get install mono-complete uuid-runtime axel
 {% endhighlight %}
 
-Mono é um implementação do Framework .NET para uma ampla faixa de sistemas operacionais, dentre eles o Linux, ele será responsável por executar o nosso integrador.
-Os comandos acima irão adicionar o repositório no Mono e fazer a instalação, é comum que durante a instalação demore um pouco. O pacote axel é semelhante ao wget, usaremos ele para baixar os nossos arquivos.
+
 
 ## Download dos arquivos
+Agora vamos baixar e extrair arquivos de instalação.
 {% highlight ruby %}
 cd ~/Downloads
 axel https://integrador.blob.core.windows.net/integrador/instalador-ce-sefaz-driver-linux-x64-02.04.07.tar.gz
@@ -42,6 +45,6 @@ axel https://integrador.blob.core.windows.net/linuxwithoutui/sqlite-netFx-full-s
 axel https://integrador.blob.core.windows.net/linuxwithoutui/IntegradorLinuxServidor.zip
 {% endhighlight %}
 
-Agora vamos baixar e extrair arquivos de instalação.
+
 
 {% if page.comments %} {% endif %}
