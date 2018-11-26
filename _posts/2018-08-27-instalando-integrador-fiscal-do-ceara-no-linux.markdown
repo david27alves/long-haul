@@ -26,4 +26,6 @@ sudo apt-get update
 sudo apt-get install mono-complete uuid-runtime axel
 {% endhighlight %}
 
+> Mono é um implementação construída em comunidade do Framework .NET para uma ampla faixa de sistemas operacionais e arquiteturas de CPU. Na verdade, o framework .NET da Microsoft é apenas a mais comum implementação de um padrão ECMA, números de 334 e 335, que permite programas serem desenvolvidos em alguma plataforma e executados em outra plataforma.
+
 {% if page.comments %} {% endif %}
